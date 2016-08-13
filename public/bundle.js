@@ -26484,19 +26484,53 @@
 
 	var React = __webpack_require__(8);
 
+	var _require = __webpack_require__(166);
+
+	var Link = _require.Link;
+
+
 	var About = function About(props) {
 	  return React.createElement(
 	    'div',
 	    null,
 	    React.createElement(
-	      'h3',
-	      null,
+	      'h1',
+	      { className: 'text-center' },
 	      'About'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Welcome to the about page.'
+	      'This is a weather application built on React. I have built this for the Complete React Developer Course'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Here are some of the tools I\'ve used:'
+	    ),
+	    React.createElement(
+	      'ul',
+	      null,
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          'a',
+	          { href: 'https://facebook.github.io/react' },
+	          'React'
+	        ),
+	        ' - This was the javascript framework used'
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          'a',
+	          { href: 'http://openweathermap.org' },
+	          'Open Weather Map'
+	        ),
+	        ' I used Open Weather Map to dearch for weather data by city name.'
+	      )
 	    )
 	  );
 	};
